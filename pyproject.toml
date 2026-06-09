@@ -1,0 +1,33 @@
+[project]
+name = "shape-fps-case"
+version = "0.1.0"
+description = "FPSO equipment failure analysis and predictive maintenance case"
+requires-python = ">=3.12"
+
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "scikit-learn>=1.5",
+    "xgboost>=2.0",
+    "openpyxl>=3.1",
+    "skimpy>=0.0.18",
+
+    # Notebook
+    "jupyter",
+    "notebook",
+    "nbconvert",
+    "ipykernel",
+
+    # Code quality
+    "ruff",
+    "black"
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.black]
+line-length = 100
